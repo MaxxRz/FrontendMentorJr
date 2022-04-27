@@ -1,0 +1,40 @@
+.sectionTitle{
+   position: relative;
+   text-transform: uppercase;  
+
+   picture img{
+      width: 100%;
+   }
+}
+
+
+.titlePage{
+   text-align: center;
+   height: 50%;
+   width: 100%;
+   position: absolute;
+   letter-spacing: .5rem;
+   color: $White;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   transform: translateY(55%);
+
+   @include rwd_desktop{
+      height: 45%;
+      transform: translateY(50%);
+   }
+
+   @include rwd_desktopFull{
+      height: 35%;
+      transform: translateY(100%);
+   }
+
+   img{
+      width: 40px;
+      @include rwd_desktopFull{
+         width: 50px;
+      }
+   }
+}

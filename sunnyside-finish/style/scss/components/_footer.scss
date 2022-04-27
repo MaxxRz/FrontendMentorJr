@@ -1,0 +1,34 @@
+footer {
+   padding: 3rem;
+   background-color: $darkGreen;
+   text-align: center;
+}
+
+.footerLogo {
+   display: inline-block;
+   padding-bottom: 3rem;
+
+   svg {
+      fill: $darkdDesaturated;
+      scale: 1.5;
+   }
+}
+
+.footerOptions {
+   display: flex;
+   justify-content: space-around;
+   margin: 0 auto;
+   color: $darkModerate;
+
+   @include rwd_desktop{
+      width: 30vw;
+   }
+}
+
+.footerIcons {
+   padding: 8rem 0 3rem;
+   svg {
+      margin-left: 10px;
+      margin-right: 10px;
+   }
+}

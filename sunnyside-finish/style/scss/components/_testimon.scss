@@ -1,0 +1,51 @@
+.sectionTestimon {
+   text-align: center;
+   color: $veryDarkGrayish;
+   padding: 4rem 0;
+
+   h4 {
+      text-transform: uppercase;
+      letter-spacing: 0.25rem;
+      color: $GrayishBlue;
+      width: 100%;
+   }
+
+   img {
+      border-radius: 50%;
+      width: 100px;
+      margin-bottom: 2rem;
+   }
+
+   article {
+      padding: 3rem 2rem;
+   }
+
+   @include rwd_desktop{
+      padding: 8rem 0;
+   }
+   
+}
+@include rwd_desktop{
+   .contentTestimon{
+      display: flex;
+      padding: 0 8rem;
+   }
+}
+.testimonText{
+   line-height:2;
+}
+.testimonName{
+   padding: 2rem 0 0;
+
+   p{
+      font-family: $familyfraunces;
+      color: $veryDarkDesaturated;
+      font-weight: 900;
+      line-height: 2;
+   }
+
+   span{
+      font-size: .8rem;
+      color: $GrayishBlue;
+   }
+}

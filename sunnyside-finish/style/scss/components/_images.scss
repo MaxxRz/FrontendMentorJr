@@ -1,0 +1,12 @@
+.sectionImages {
+   display: grid;
+   grid: 50vw / auto auto;
+
+   picture img {
+      width: 100%;
+   }
+
+   @include rwd_desktop{
+      grid: 25vw / auto auto auto auto;
+   }
+}

@@ -1,0 +1,37 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+
+h1,h2,h3,h4{
+   font-family: $familyfraunces;
+   font-weight: 900;
+   padding: 1.5rem 0;
+}
+h1{
+   font-size: 2.8rem;
+}
+h2{
+   font-size: 2rem;
+}
+h3{
+   font-size: 1.8rem;
+}
+a{
+   text-decoration: none;
+   font-family: $familyfraunces;
+   text-transform: uppercase;
+   color: $veryDarkDesaturated;
+   font-weight: 900;
+}
+ul{
+   list-style: none;
+}
+
+body{
+   font-size: 18px;
+   font-family:  $familyBarlow;
+}
+
+picture{
+   display: flex;
+}

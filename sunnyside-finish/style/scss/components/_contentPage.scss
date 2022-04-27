@@ -1,0 +1,113 @@
+.contentPage {
+   display: grid;
+   grid-template-columns: auto;
+
+   picture img {
+      width: 100%;
+   }
+
+   @include rwd_desktop{
+      grid-template-columns: 50vw auto;
+      text-align: left;
+      column-gap: 0;
+      row-gap: 0;
+
+      picture{
+         height: 100%;
+         width: 100%;
+      }
+   }
+}
+.contentPage_text {
+   padding: 4rem 2rem;
+   text-align: left;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;;
+   align-self: center;
+
+   p {
+      color: $darkGrayish;
+      line-height: 1.5;
+      text-align: center;
+   }
+
+   a {
+      margin: 2rem 0;
+      display: inline-block;
+      position: relative;
+      letter-spacing: 1px;
+
+      &::after {
+         position: absolute;
+         display: block;
+         content: "";
+         width: 110%;
+         height: 10px;
+         background-color: $softRed;
+         border-radius: 50px;
+         bottom: -3px;
+         left: -5%;
+         z-index: -1;
+         opacity: 0.3;
+      }
+   }
+
+   @include rwd_desktop{
+      padding: 4rem;
+      align-items: flex-start;
+
+      p{
+         text-align: left;
+      }
+   }
+}
+.contentPage_image{
+   height: 100%;
+}
+.contentPage_imageText {
+   position: relative;
+   display: flex;
+   
+   div {
+      position: absolute;
+      z-index: 1;
+      height: 50%;
+      bottom: 0;
+   }
+
+   @include rwd_desktop{
+      .contentPage_imageText div{
+         align-items: center;
+         
+         p{
+            text-align: center;
+         }
+      }
+   }
+}
+.graphicDesign h3,
+.graphicDesign p {
+   color: $darkdDesaturated;
+}
+
+.photography h3,
+.photography p {
+   color: $darkBlue;
+}
+
+@include rwd_desktop{
+   .contentPage_grid2{
+      grid-area: 1;
+   }
+
+   .contentPage_imageText .contentPage_text{
+      width: 100%;
+      align-items: center;
+
+      p{
+         text-align: center;
+      }
+   }
+}
